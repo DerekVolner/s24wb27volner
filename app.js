@@ -8,6 +8,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var rhinoRouter = require('./routes/rhino');
 var gridRouter = require('./routes/grid')
+var pickRandRouter = require('./routes/pick')
 
 
 
@@ -28,6 +29,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/rhino', rhinoRouter);
 app.use('/grid', gridRouter);
+app.use('/pick',pickRandRouter)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
